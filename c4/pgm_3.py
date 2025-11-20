@@ -1,0 +1,61 @@
+
+class Publisher:
+    def __init__(self, name):
+        self.name = name
+
+    def display_info(self):
+        print("Publisher Name:", self.name)
+
+
+
+class Book(Publisher):
+    def __init__(self, name, title, author):
+        super().__init__(name)
+        self.title = title
+        self.author = author
+
+    def display_info(self):
+        super().display_info()
+        print("Book Title:", self.title)
+        print("Author:", self.author)
+
+
+
+class PythonBook(Book):
+    def __init__(self, name, title, author, price, no_of_pages):
+        super().__init__(name, title, author)
+        self.price = price
+        self.no_of_pages = no_of_pages
+
+    def display_info(self):
+        super().display_info()
+        print("Price: ₹", self.price)
+        print("Number of Pages:", self.no_of_pages)
+
+ def deposite(self, amount):
+        if amount > 0:
+            self.balance += amount
+            print(f"{amount} deposited succesfully")
+        else:
+            print("invalid deposit amount")
+
+    def withdraw(self,amount):
+        if amount <= 0:
+            print("invalid  withdraw amount")
+        elif amount > self.balance:
+            print("insuccesffull balane")
+        else:
+
+            print("invalid deposit amount")
+
+publisher_name = input("Enter Publisher Name: ")
+book_title = input("Enter Book Title: ")
+author_name = input("Enter Author Name: ")
+price = float(input("Enter Price: ₹"))
+no_of_pages = int(input("Enter Number of Pages: "))
+
+python_book = PythonBook(publisher_name, book_title, author_name, price, no_of_pages)
+
+
+print("\n--- Python Book Information ---")
+python_book.display_info()
