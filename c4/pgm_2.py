@@ -10,35 +10,7 @@ class BankAccount:
             self.balance += amount
             print(f"₹{amount} deposited successfully!")
         else:
-           class bank_account:
-    def __init__(self, no, name, type, balance):
-        self.account_no = no
-        self.nmae = name
-        self.type_of_account = type
-        self.balance = balance
-
-    def deposite(self, amount):
-        if amount > 0:
-            self.balance += amount
-            print(f"{amount} deposited succesfully")
-        else:
-            print("invalid deposit amount")
-
-    def withdraw(self,amount):
-        if amount <= 0:
-            print("invalid  withdraw amount")
-        elif amount > self.balance:
-            print("insuccesffull balane")
-        else:
-
-            print("invalid deposit amount")
-
-
-
-accno = int(input("entar the account no:"))
-acctype = int(input("entar the account type:"))
-accname = int(input("entar the account name:"))
- print("Invalid deposit amount!")
+            print("Invalid deposit amount!")
 
     def withdraw(self, amount):
         if amount <= 0:

@@ -32,21 +32,7 @@ class PythonBook(Book):
         print("Price: ₹", self.price)
         print("Number of Pages:", self.no_of_pages)
 
- def deposite(self, amount):
-        if amount > 0:
-            self.balance += amount
-            print(f"{amount} deposited succesfully")
-        else:
-            print("invalid deposit amount")
 
-    def withdraw(self,amount):
-        if amount <= 0:
-            print("invalid  withdraw amount")
-        elif amount > self.balance:
-            print("insuccesffull balane")
-        else:
-
-            print("invalid deposit amount")
 
 publisher_name = input("Enter Publisher Name: ")
 book_title = input("Enter Book Title: ")
